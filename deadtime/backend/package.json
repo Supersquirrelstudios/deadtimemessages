@@ -1,0 +1,17 @@
+{
+  "name": "deadtime-backend",
+  "version": "1.0.0",
+  "description": "Backend server for DeadTime – The Digital Legacy App",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1",
+    "aws-sdk": "^2.1480.0",
+    "dotenv": "^16.1.4",
+    "cors": "^2.8.5",
+    "nodemailer": "^6.9.3"
+  }
+}
