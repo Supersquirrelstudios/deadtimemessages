@@ -1,27 +1,114 @@
+/* Global styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
   background: #0a1f44;
   color: #ffffff;
+  line-height: 1.6;
 }
-header {
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #112d64, #0a1f44);
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta-button {
+  background: #f9ba4d;
+  color: #0a1f44;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.cta-button:hover {
+  background: #f5a623;
+}
+
+/* Generic section styling */
+.section {
   padding: 50px 20px;
-  background: #112d64;
+  max-width: 900px;
+  margin: 0 auto;
 }
-section {
-  padding: 40px 20px;
+.section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-h1, h2 {
-  margin: 0 0 20px 0;
-}
-ul {
-  list-style: disc;
+.section ul, .section ol {
   margin-left: 20px;
 }
+.section ul li, .section ol li {
+  margin-bottom: 10px;
+}
+
+/* Alternate background for better contrast */
+.alternate {
+  background: #102859;
+}
+
+/* Testimonials */
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 4px solid #f9ba4d;
+}
+
+/* Signup form */
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.signup-form input[type="email"] {
+  flex: 1 1 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.signup-form button {
+  padding: 10px 20px;
+  background: #f9ba4d;
+  color: #0a1f44;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.signup-form button:hover {
+  background: #f5a623;
+}
+
+/* FAQ headings */
+#faq h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background: #112d64;
+  font-size: 0.9rem;
 }
