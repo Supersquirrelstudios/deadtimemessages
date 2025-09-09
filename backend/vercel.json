@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/index.js", "use": "@vercel/node" }],
+  "builds": [
+    { "src": "backend/api/index.js", "use": "@vercel/node" },
+    { "src": "deadtime/next.config.js", "use": "@vercel/next" }
+  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/index.js" },
-    { "src": "/(.*)", "status": 404, "dest": "/api/index.js" }
+    { "src": "^/api/(.*)", "dest": "backend/api/index.js" },
+    { "src": "/(.*)", "dest": "deadtime/$1" }
   ]
 }
