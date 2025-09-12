@@ -24,6 +24,7 @@ export async function listUpcoming(fromEpoch: number, toEpoch = fromEpoch + 365*
   });
   return (items || []).map((s: sring) => JSON.parse(s));
 
+}
 
 export async function cancelById(id: string): Promise<boolean> {
   // fetch a reasonable window, find matching JSON payload, then remove that member
